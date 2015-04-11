@@ -1,6 +1,6 @@
 ### Student Management System
 
-Programme Designning Experiment in Java.
+Programme Designing Experiment in Java.
 
 * * *
 
