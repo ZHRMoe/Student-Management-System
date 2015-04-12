@@ -5,28 +5,33 @@ package com.bistuSMS;
  */
 
 /**
- * Login is a class for login action.
- * There are 3 properties in the class: 'userName', 'loginSucceed', 'logined'(default as false).Get method to boolean type properties are provided.
+ * SMSLoginStatus is a class to describe login status.
+ * There are 3 properties in this class.
+ * This class provides only one construction method without parametric.(In default situation, the boolean properties are false.)
+ * This class provides 2 methods:
+ 'isLoginSucceed' is a method to know the username and password is correct.
+ 'islogedIn' is a method to open main window.
  * ZHRMoe Studio, 2015.
  */
+
 
 public class SMSLoginStatus {
 
     private String userName;
     private boolean loginSucceed = false;
-    private boolean logined;
+    private boolean logedIn;
 
     public SMSLoginStatus() {
         this.loginSucceed = false;
-        this.logined = false;
+        this.logedIn = false;
     }
 
     public boolean isLoginSucceed() {
         return loginSucceed;
     }
 
-    public boolean isLogined() {
-        return logined;
+    public boolean isLogedIn() {
+        return logedIn;
     }
 
 }
