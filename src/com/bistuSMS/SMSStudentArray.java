@@ -15,16 +15,13 @@ import java.util.ArrayList;
    'addStudent' is a method to add SMSStudent type case into the ArrayList, a parametric is needed to be added. (The default implementation to it adds the case at the end of the ArrayList)
    'editStudent' is a method to edit SMSStudent type case into another SMSStudent type case, two parametric are needed to get the int type location to edit, and an SMSStudent type case after edit.
    'deleteStudent' is a method to delete SMSStudent type case from the ArrayList, a parametric is needed to locate.
-   'checkStudent' is a method returned String type, you can use this method to get words will be showed in the window.
+   'checkStudent' is a method returned String type, you can use this method to get words will be shown in the window.
  * ZHRMoe Studio, 2015.
  */
 
-@SuppressWarnings("unchecked") //Avoiding warnings including word "unchecked". If you are testing other methods except 'addStudent(SMSStudent)', you'd better comment this code.
-
-
 public class SMSStudentArray {
 
-    private ArrayList studentList;
+    private ArrayList<SMSStudent> studentList = new ArrayList<SMSStudent>();
 
     public SMSStudentArray() {
 
