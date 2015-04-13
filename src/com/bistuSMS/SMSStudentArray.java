@@ -24,7 +24,10 @@ public class SMSStudentArray {
     private ArrayList<SMSStudent> studentList = new ArrayList<SMSStudent>();
 
     public SMSStudentArray() {
-
+        for (int i = 0; i < 100; ++i) {
+            SMSStudent newStudent = new SMSStudent(String.format("Student%d", i), "Male", "CS1403", String.format("2014011%3d",i));
+            studentList.add(newStudent);
+        }
     }
 
     public ArrayList getStudentList() {
