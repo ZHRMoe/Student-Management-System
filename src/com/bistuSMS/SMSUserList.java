@@ -18,10 +18,11 @@ import java.util.ArrayList;
 
 public class SMSUserList {
 
-    private ArrayList<SMSUser> userList = new ArrayList<SMSUser>();
+    public ArrayList<SMSUser> userList = new ArrayList<SMSUser>();
 
     public SMSUserList() {
-
+        SMSUser testUser = new SMSUser();
+        userList.add(testUser);
     }
 
     public boolean register(SMSUser user) {
@@ -45,4 +46,11 @@ public class SMSUserList {
         return false;
     }
 
+    public SMSUser getUser(int position) {
+        return userList.get(position);
+    }
+
+    public int getUserListCount() {
+        return userList.size();
+    }
 }

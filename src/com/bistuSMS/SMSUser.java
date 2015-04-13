@@ -31,6 +31,10 @@ public class SMSUser {
         return this.userName;
     }
 
+    public String getUserPsw() {
+        return this.userPsw;
+    }
+
     public void setUserPsw(String psw) {
         this.userPsw = psw;
     }

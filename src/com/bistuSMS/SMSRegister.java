@@ -2,12 +2,16 @@ package com.bistuSMS;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 /**
  * Created by ZHRMoe on 15/4/14.
  */
 
-public class SMSRegister extends JFrame{
+public class SMSRegister extends JFrame implements ActionListener{
 
     private JTextField nameTextField = new JTextField(13);
     private JPasswordField pswField = new JPasswordField(13);
@@ -48,12 +52,27 @@ public class SMSRegister extends JFrame{
         this.add(panel4);
         this.add(panel5);
 
+        backBtn.addActionListener(this);
+        registerBtn.addActionListener(this);
+
         this.setSize(300, 200);
 
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setVisible(true);
         this.setTitle("学生管理系统-注册新用户");
 
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
+
+    }
+
+    public void actionPerformed(ActionEvent a) {
+        if (a.getSource() == registerBtn) {
+
+        }
     }
 
 }
