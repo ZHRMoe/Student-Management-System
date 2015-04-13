@@ -51,4 +51,8 @@ public class SMSStudentArray {
         return "Name: " + stu.getStuName() + "\nSex: " + stu.getStuSex() + "\nClass: " + stu.getStuClass() + "\nNumber: " + stu.getStuNumber();
     }
 
+    public int studentListCount() {
+        return studentList.size();
+    }
+
 }
