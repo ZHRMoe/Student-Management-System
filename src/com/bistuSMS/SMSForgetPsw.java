@@ -2,12 +2,16 @@ package com.bistuSMS;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 /**
  * Created by ZHRMoe on 15/4/14.
  */
 
-public class SMSForgetPsw extends JFrame {
+public class SMSForgetPsw extends JFrame implements ActionListener{
 
     private JTextField nameTextField = new JTextField(13);
     private JPasswordField pswField = new JPasswordField(13);
@@ -48,11 +52,52 @@ public class SMSForgetPsw extends JFrame {
         this.add(panel4);
         this.add(panel5);
 
+        changePswBtn.addActionListener(this);
+        backBtn.addActionListener(this);
+
         this.setSize(300, 200);
 
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setVisible(true);
         this.setTitle("学生管理系统-忘记密码");
+
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
+
+    }
+
+    public void actionPerformed(ActionEvent a) {
+        if (a.getSource() == changePswBtn) {
+            SMSUserList userList = new SMSUserList();
+            String userName = nameTextField.getText();
+            char[] passWord = pswField.getPassword();
+            char[] confirmPsw = confirmPswField.getPassword();
+            String psw = String.valueOf(passWord);
+            String conPsw = String.valueOf(confirmPsw);
+            boolean changePswFlag = false;
+            if (psw.equals(conPsw)) {
+                for (int i = 0; i < userList.getUserListCount(); ++i) {
+                    if (userList.getUser(i).getUserName().equals(userName)) {
+                        SMSUser newUser = new SMSUser(userName, psw);
+                        userList.forgotPsw(newUser);
+                        changePswFlag = true;
+                        new SMSLogin();
+                        this.setVisible(false);
+                    }
+                }
+                if (!changePswFlag) {
+                    JOptionPane.showMessageDialog(null, "用户名不存在");
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "两次输入的密码不同！");
+            }
+        } else if (a.getSource() == backBtn) {
+            new SMSLogin();
+            this.setVisible(false);
+        }
 
     }
 

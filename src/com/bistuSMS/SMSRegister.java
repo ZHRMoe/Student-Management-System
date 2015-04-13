@@ -71,7 +71,32 @@ public class SMSRegister extends JFrame implements ActionListener{
 
     public void actionPerformed(ActionEvent a) {
         if (a.getSource() == registerBtn) {
-
+            String userName = nameTextField.getText();
+            char[] passWord = pswField.getPassword();
+            char[] confirmPsw = confirmPswField.getPassword();
+            String psw = String.valueOf(passWord);
+            String conPsw = String.valueOf(confirmPsw);
+            SMSUserList userList = new SMSUserList();
+            boolean registerFlag = true;
+            if (psw.equals(conPsw)) {
+                for (int i = 0; i < userList.getUserListCount(); ++i) {
+                    if (userList.getUser(i).getUserName().equals(userName)) {
+                        registerFlag = false;
+                        JOptionPane.showMessageDialog(null, "用户名已存在！");
+                    }
+                }
+                if (registerFlag) {
+                    SMSUser newUser = new SMSUser(userName, psw);
+                    userList.register(newUser);
+                    new SMSLogin();
+                    this.setVisible(false);
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "两次输入的密码不同！");
+            }
+        } else if (a.getSource() == backBtn) {
+            new SMSLogin();
+            this.setVisible(false);
         }
     }
 

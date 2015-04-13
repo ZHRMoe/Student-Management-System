@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SMSLoginStatus.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SMSLoginStatus.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSLoginStatus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.38345864">
               <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
               <folding />
             </state>
@@ -46,11 +46,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="SMSStudentArray.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSStudentArray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+              <folding>
+                <element signature="e#1524#1525#0" expanded="true" />
+                <element signature="e#1558#1559#0" expanded="true" />
+                <element signature="e#1892#1893#0" expanded="true" />
+                <element signature="e#1948#1949#0" expanded="true" />
+                <element signature="e#2185#2186#0" expanded="true" />
+                <element signature="e#2226#2227#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SMSRegister.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSRegister.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+              <caret line="95" column="13" selection-start-line="80" selection-start-column="12" selection-end-line="95" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1920#1921#0" expanded="true" />
@@ -60,38 +77,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SMSStudentArray.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSStudentArray.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
-              <folding>
-                <element signature="e#1524#1525#0" expanded="true" />
-                <element signature="e#1558#1559#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SMSForgetPsw.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSForgetPsw.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="52" column="53" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
+              <caret line="86" column="39" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SMSUserList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSUserList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <element signature="e#787#796#0" expanded="true" />
+                <element signature="e#1925#1926#0" expanded="true" />
+                <element signature="e#1971#1972#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -108,31 +102,6 @@
                 <element signature="e#1822#1823#0" expanded="true" />
                 <element signature="e#2850#2851#0" expanded="true" />
                 <element signature="e#2880#2881#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SMSMainWindow.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSMainWindow.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45112783">
-              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SMSStart.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSStart.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-              <folding>
-                <element signature="e#186#187#0" expanded="true" />
-                <element signature="e#216#217#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -160,14 +129,14 @@
         <option value="$PROJECT_DIR$/src/com/bistuSMS/Login.java" />
         <option value="$PROJECT_DIR$/src/com/bistuSMS/LoginStatus.java" />
         <option value="$PROJECT_DIR$/src/com/bistuSMS/SMSLoginStatus.java" />
-        <option value="$PROJECT_DIR$/src/com/bistuSMS/SMSForgetPsw.java" />
         <option value="$PROJECT_DIR$/src/com/bistuSMS/SMSUser.java" />
         <option value="$PROJECT_DIR$/src/com/bistuSMS/SMSMainWindow.java" />
         <option value="$PROJECT_DIR$/src/com/bistuSMS/SMSLogin.java" />
-        <option value="$PROJECT_DIR$/src/com/bistuSMS/SMSStudentArray.java" />
         <option value="$PROJECT_DIR$/src/com/bistuSMS/SMSStart.java" />
         <option value="$PROJECT_DIR$/src/com/bistuSMS/SMSUserList.java" />
+        <option value="$PROJECT_DIR$/src/com/bistuSMS/SMSStudentArray.java" />
         <option value="$PROJECT_DIR$/src/com/bistuSMS/SMSRegister.java" />
+        <option value="$PROJECT_DIR$/src/com/bistuSMS/SMSForgetPsw.java" />
       </list>
     </option>
   </component>
@@ -549,12 +518,12 @@
       <workItem from="1428760320067" duration="7539000" />
       <workItem from="1428829609326" duration="1343000" />
       <workItem from="1428857845798" duration="1333000" />
-      <workItem from="1428941927424" duration="8435000" />
+      <workItem from="1428941927424" duration="10309000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18661000" />
+    <option name="totallyTimeSpent" value="20535000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="-597" width="1920" height="1080" extended-state="0" />
@@ -753,14 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSLoginStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/testClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24812031">
@@ -784,13 +745,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSStudent.java">
+    <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSStart.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
           <folding>
-            <element signature="e#901#902#0" expanded="true" />
-            <element signature="e#931#932#0" expanded="true" />
+            <element signature="e#186#187#0" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSMainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSUserList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30075186">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#787#796#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSForgetPsw.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="39" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1925#1926#0" expanded="true" />
+            <element signature="e#1971#1972#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -798,7 +791,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSRegister.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <caret line="95" column="13" selection-start-line="80" selection-start-column="12" selection-end-line="95" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1920#1921#0" expanded="true" />
@@ -810,30 +803,14 @@
     <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSStudentArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
           <folding>
             <element signature="e#1524#1525#0" expanded="true" />
             <element signature="e#1558#1559#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSForgetPsw.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="53" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSUserList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#787#796#0" expanded="true" />
+            <element signature="e#1892#1893#0" expanded="true" />
+            <element signature="e#1948#1949#0" expanded="true" />
+            <element signature="e#2185#2186#0" expanded="true" />
+            <element signature="e#2226#2227#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -852,24 +829,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSStart.java">
+    <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSStudent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
           <folding>
-            <element signature="e#186#187#0" expanded="true" />
-            <element signature="e#216#217#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSMainWindow.java">
+    <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSLoginStatus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45112783">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.38345864">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
