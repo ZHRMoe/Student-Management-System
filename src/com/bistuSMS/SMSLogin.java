@@ -9,32 +9,20 @@ import java.awt.*;
 
 public class SMSLogin extends JFrame{
 
-    private JTextField nameTextField;
-    private JPasswordField pswField;
-    private JLabel titleLabel;
-    private JLabel userNameLabel;
-    private JLabel pswLabel;
-    private JButton logInBtn;
-    private JButton registerBtn;
-    private JButton forgotPswBtn;
-    private JPanel panel1;
-    private JPanel panel2;
-    private JPanel panel3;
-    private JPanel panel4;
+    private JTextField nameTextField = new JTextField(13);
+    private JPasswordField pswField = new JPasswordField(13);
+    private JLabel titleLabel = new JLabel("学生管理系统");
+    private JLabel userNameLabel = new JLabel("用户名：");
+    private JLabel pswLabel = new JLabel("密码：   ");
+    private JButton logInBtn = new JButton("登录");
+    private JButton registerBtn = new JButton("注册");
+    private JButton forgotPswBtn = new JButton("忘记密码");
+    private JPanel panel1 = new JPanel();
+    private JPanel panel2 = new JPanel();
+    private JPanel panel3 = new JPanel();
+    private JPanel panel4 = new JPanel();
 
     public SMSLogin() {
-        nameTextField = new JTextField(13);
-        pswField = new JPasswordField(13);
-        titleLabel = new JLabel("学生管理系统");
-        userNameLabel = new JLabel("用户名：");
-        pswLabel = new JLabel("密码：   ");
-        logInBtn = new JButton("登陆");
-        registerBtn = new JButton("注册");
-        forgotPswBtn = new JButton("忘记密码");
-        panel1 = new JPanel();
-        panel2 = new JPanel();
-        panel3 = new JPanel();
-        panel4 = new JPanel();
 
         this.setLayout(new GridLayout(4, 1));
 
@@ -57,7 +45,7 @@ public class SMSLogin extends JFrame{
 
         this.setSize(300, 200);
 
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setVisible(true);
         this.setTitle("学生管理系统-登陆");
 
