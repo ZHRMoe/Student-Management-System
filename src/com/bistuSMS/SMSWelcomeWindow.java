@@ -8,22 +8,24 @@ import java.awt.*;
  */
 public class SMSWelcomeWindow extends JFrame {
     public static void main(String[] args) {
-        new WelcomeWindow();
+        new SMSWelcomeWindow();
     }
 
     private JLabel titleLabel;
     private JLabel membersLabel;
     private JPanel titlePanel;
     private JPanel membersPanel;
-    public WelcomeWindow() {
+    private Font font = new Font("Default",Font.PLAIN,20);
+    public SMSWelcomeWindow() {
         titleLabel = new JLabel("Welcome");
+        titleLabel.setFont(font);
         titlePanel = new JPanel();
         titlePanel.add(titleLabel);
         membersLabel = new JLabel("Powered by Haoran Zhang, Bo Xu, Bo Hu");
         membersPanel = new JPanel();
         membersPanel.add(membersLabel);
         this.add(titlePanel, BorderLayout.NORTH);
-        this.add(membersLabel, BorderLayout.SOUTH);
+        this.add(membersPanel, BorderLayout.SOUTH);
         this.setSize(800, 600);
         this.setTitle("Student Management System");
         this.setVisible(true);
