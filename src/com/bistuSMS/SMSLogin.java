@@ -63,6 +63,45 @@ public class SMSLogin extends JFrame implements ActionListener {
         });
     }
 
+    public SMSLogin(String userName) {
+        this.setLayout(new GridLayout(4, 1));
+
+        nameTextField.setText(userName);
+
+        panel1.add(titleLabel);
+
+        panel2.add(userNameLabel);
+        panel2.add(nameTextField);
+
+        panel3.add(pswLabel);
+        panel3.add(pswField);
+
+        panel4.add(registerBtn);
+        panel4.add(forgotPswBtn);
+        panel4.add(logInBtn);
+
+        this.add(panel1);
+        this.add(panel2);
+        this.add(panel3);
+        this.add(panel4);
+
+        logInBtn.addActionListener(this);
+        registerBtn.addActionListener(this);
+        forgotPswBtn.addActionListener(this);
+
+        this.setSize(300, 200);
+
+//        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        this.setVisible(true);
+        this.setTitle("学生管理系统-登陆");
+
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
+    }
+
     public void actionPerformed(ActionEvent a) {
         if (a.getSource() == logInBtn) {
             String userName = nameTextField.getText();

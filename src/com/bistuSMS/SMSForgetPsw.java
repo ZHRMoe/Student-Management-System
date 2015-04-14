@@ -84,7 +84,7 @@ public class SMSForgetPsw extends JFrame implements ActionListener{
                         SMSUser newUser = new SMSUser(userName, psw);
                         userList.forgotPsw(newUser);
                         changePswFlag = true;
-                        new SMSLogin();
+                        new SMSLogin(userName);
                         this.setVisible(false);
                     }
                 }

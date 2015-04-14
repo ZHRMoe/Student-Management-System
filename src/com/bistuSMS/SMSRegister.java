@@ -82,6 +82,8 @@ public class SMSRegister extends JFrame implements ActionListener{
                 for (int i = 0; i < userList.getUserListCount(); ++i) {
                     if (userList.getUser(i).getUserName().equals(userName)) {
                         registerFlag = false;
+                        new SMSLogin(userName);
+                        this.setVisible(false);
                         JOptionPane.showMessageDialog(null, "用户名已存在！");
                     }
                 }

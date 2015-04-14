@@ -43,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SMSStudentArray.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SMSStudentArray.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSStudentArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50344825">
+            <state vertical-scroll-proportion="0.0">
               <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
               <folding>
                 <element signature="e#1208#1220#0" expanded="true" />
@@ -69,11 +69,9 @@
         <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSRegister.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="95" column="13" selection-start-line="80" selection-start-column="12" selection-end-line="95" selection-end-column="13" />
+              <caret line="97" column="13" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1920#1921#0" expanded="true" />
-                <element signature="e#1966#1967#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,27 +81,23 @@
         <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSForgetPsw.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="86" column="39" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="39" />
+              <caret line="91" column="66" selection-start-line="91" selection-start-column="66" selection-end-line="91" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1925#1926#0" expanded="true" />
-                <element signature="e#1971#1972#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SMSLogin.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SMSLogin.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSLogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="67" column="54" selection-start-line="67" selection-start-column="54" selection-end-line="67" selection-end-column="54" />
+            <state vertical-scroll-proportion="3.4832635">
+              <caret line="113" column="43" selection-start-line="113" selection-start-column="43" selection-end-line="113" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1776#1777#0" expanded="true" />
-                <element signature="e#1822#1823#0" expanded="true" />
-                <element signature="e#2850#2851#0" expanded="true" />
-                <element signature="e#2880#2881#0" expanded="true" />
+                <element signature="e#2747#2748#0" expanded="true" />
+                <element signature="e#2793#2794#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,12 +127,12 @@
         <option value="$PROJECT_DIR$/src/com/bistuSMS/SMSLoginStatus.java" />
         <option value="$PROJECT_DIR$/src/com/bistuSMS/SMSUser.java" />
         <option value="$PROJECT_DIR$/src/com/bistuSMS/SMSMainWindow.java" />
-        <option value="$PROJECT_DIR$/src/com/bistuSMS/SMSLogin.java" />
         <option value="$PROJECT_DIR$/src/com/bistuSMS/SMSStart.java" />
         <option value="$PROJECT_DIR$/src/com/bistuSMS/SMSUserList.java" />
+        <option value="$PROJECT_DIR$/src/com/bistuSMS/SMSStudentArray.java" />
+        <option value="$PROJECT_DIR$/src/com/bistuSMS/SMSLogin.java" />
         <option value="$PROJECT_DIR$/src/com/bistuSMS/SMSRegister.java" />
         <option value="$PROJECT_DIR$/src/com/bistuSMS/SMSForgetPsw.java" />
-        <option value="$PROJECT_DIR$/src/com/bistuSMS/SMSStudentArray.java" />
       </list>
     </option>
   </component>
@@ -519,12 +513,12 @@
       <workItem from="1428829609326" duration="1343000" />
       <workItem from="1428857845798" duration="1333000" />
       <workItem from="1428941927424" duration="14393000" />
-      <workItem from="1428989763666" duration="110000" />
+      <workItem from="1428989763666" duration="602000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24729000" />
+    <option name="totallyTimeSpent" value="25221000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -532,11 +526,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913843" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32802126" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16640624" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -545,15 +541,13 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39980638" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913843" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913843" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39980638" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -618,8 +612,6 @@
           <caret line="95" column="13" selection-start-line="80" selection-start-column="12" selection-end-line="95" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1920#1921#0" expanded="true" />
-            <element signature="e#1966#1967#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -630,8 +622,6 @@
           <caret line="86" column="39" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1925#1926#0" expanded="true" />
-            <element signature="e#1971#1972#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -642,10 +632,8 @@
           <caret line="67" column="54" selection-start-line="67" selection-start-column="54" selection-end-line="67" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1776#1777#0" expanded="true" />
-            <element signature="e#1822#1823#0" expanded="true" />
-            <element signature="e#2850#2851#0" expanded="true" />
-            <element signature="e#2880#2881#0" expanded="true" />
+            <element signature="e#2747#2748#0" expanded="true" />
+            <element signature="e#2793#2794#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -834,13 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/testClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24812031">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -860,6 +841,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding>
+            <element signature="e#186#187#0" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -876,44 +861,6 @@
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="e#787#796#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSForgetPsw.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="86" column="39" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1925#1926#0" expanded="true" />
-            <element signature="e#1971#1972#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSRegister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="13" selection-start-line="80" selection-start-column="12" selection-end-line="95" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1920#1921#0" expanded="true" />
-            <element signature="e#1966#1967#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="54" selection-start-line="67" selection-start-column="54" selection-end-line="67" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1776#1777#0" expanded="true" />
-            <element signature="e#1822#1823#0" expanded="true" />
-            <element signature="e#2850#2851#0" expanded="true" />
-            <element signature="e#2880#2881#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -936,7 +883,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSStudentArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50344825">
+        <state vertical-scroll-proportion="0.0">
           <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding>
             <element signature="e#1208#1220#0" expanded="true" />
@@ -950,6 +897,38 @@
             <element signature="e#2052#2053#0" expanded="true" />
             <element signature="e#2289#2290#0" expanded="true" />
             <element signature="e#2330#2331#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="97" column="13" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSForgetPsw.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="91" column="66" selection-start-line="91" selection-start-column="66" selection-end-line="91" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.4832635">
+          <caret line="113" column="43" selection-start-line="113" selection-start-column="43" selection-end-line="113" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2747#2748#0" expanded="true" />
+            <element signature="e#2793#2794#0" expanded="true" />
           </folding>
         </state>
       </provider>
