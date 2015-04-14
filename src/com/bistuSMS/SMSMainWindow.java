@@ -14,14 +14,18 @@ import java.awt.event.FocusListener;
  * Created by Xu Bo on 2015/4/13.
  */
 
-public class SMSMainWindow extends JFrame {
+public class SMSMainWindow extends JFrame{
+
+
     JButton returnButton = new JButton("注销");
     JButton removeButton = new JButton("删除");
+    JButton addbutton = new JButton("add");
+
     Font font = new Font("Default",Font.PLAIN,20);
     Font titleFont = new Font("Default",Font.PLAIN,25);
+
     TitledBorder border1 = new TitledBorder("学生列表");
     JTable studentListTable = new JTable();
-
     JLabel titleLabel;
 
     JPanel panel1 = new JPanel();
@@ -129,6 +133,12 @@ public class SMSMainWindow extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 new SMSLogin();
                 setVisible(false);
+            }
+        });
+        addbutton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+//                new SMSAddStudent();
             }
         });
         add(panel3);
