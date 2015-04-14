@@ -56,9 +56,7 @@ public class SMSRegister extends JFrame implements ActionListener{
         registerBtn.addActionListener(this);
 
         this.setSize(300, 200);
-
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        this.setVisible(true);
         this.setTitle("学生管理系统-注册新用户");
 
         addWindowListener(new WindowAdapter() {
@@ -67,6 +65,8 @@ public class SMSRegister extends JFrame implements ActionListener{
             }
         });
 
+        setLocationRelativeTo(null);
+        this.setVisible(true);
     }
 
     public void actionPerformed(ActionEvent a) {

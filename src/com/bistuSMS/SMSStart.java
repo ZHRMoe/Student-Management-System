@@ -12,7 +12,7 @@ public class SMSStart {
     }
 
     public static void main(String[] args) {
-        new SMSLogin();
+        new SMSWelcomeWindow();
     }
 
 }

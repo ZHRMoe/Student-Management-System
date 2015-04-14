@@ -12,9 +12,6 @@ import java.awt.event.ActionListener;
  * Created by bill on 15/4/14.
  */
 public class SMSWelcomeWindow extends JFrame implements ActionListener {
-    public static void main(String[] args) {
-        new SMSWelcomeWindow();
-    }
 
     private JLabel SMSWelcome;
     private JLabel SMSSMSLabel;
@@ -33,7 +30,7 @@ public class SMSWelcomeWindow extends JFrame implements ActionListener {
         SMSSMSLabel.setFont(SMSFontMonaco);
         SMSWelcomeLogin = new JButton("开始");
         SMSWelcomeQuit = new JButton("退出");
-        SMSWelcomeMembers = new JLabel("Powered by Haoran Zhang, Bo Xu, Bo Hu");
+        SMSWelcomeMembers = new JLabel("Powered by Hu Bo, Xu Bo and Zhang Haoran");
         SMSWelcomeMembers.setFont(new Font("Default",Font.PLAIN,13));
 
         SMSWelcomePanel = new JPanel[4];
@@ -48,13 +45,13 @@ public class SMSWelcomeWindow extends JFrame implements ActionListener {
         for(int i=0;i<4;++i) {
             this.add(SMSWelcomePanel[i]);
         }
-        this.setVisible(true);
         this.setSize(300, 200);
         this.setLocationRelativeTo(null);
         this.setTitle("学生信息管理系统");
         SMSWelcomeLogin.addActionListener(this);
         SMSWelcomeLogin.getRootPane().setDefaultButton(SMSWelcomeLogin);
         SMSWelcomeQuit.addActionListener(this);
+        this.setVisible(true);
     }
 
     public void actionPerformed(ActionEvent buttonAction) {

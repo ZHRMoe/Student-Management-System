@@ -58,7 +58,7 @@ public class SMSForgetPsw extends JFrame implements ActionListener{
         this.setSize(300, 200);
 
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        this.setVisible(true);
+
         this.setTitle("学生管理系统-忘记密码");
 
         addWindowListener(new WindowAdapter() {
@@ -66,6 +66,9 @@ public class SMSForgetPsw extends JFrame implements ActionListener{
                 System.exit(0);
             }
         });
+
+        setLocationRelativeTo(null);
+        this.setVisible(true);
 
     }
 

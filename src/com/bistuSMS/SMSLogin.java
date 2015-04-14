@@ -52,7 +52,7 @@ public class SMSLogin extends JFrame implements ActionListener {
 
         this.setSize(300, 200);
 
-        this.setVisible(true);
+
         this.setTitle("学生管理系统-登陆");
 
         addWindowListener(new WindowAdapter() {
@@ -60,6 +60,9 @@ public class SMSLogin extends JFrame implements ActionListener {
                 System.exit(0);
             }
         });
+
+        setLocationRelativeTo(null);
+        this.setVisible(true);
     }
 
     public SMSLogin(String userName) {
@@ -90,7 +93,6 @@ public class SMSLogin extends JFrame implements ActionListener {
 
         this.setSize(300, 200);
 
-        this.setVisible(true);
         this.setTitle("学生管理系统-登陆");
 
         addWindowListener(new WindowAdapter() {
@@ -98,6 +100,10 @@ public class SMSLogin extends JFrame implements ActionListener {
                 System.exit(0);
             }
         });
+
+        setLocationRelativeTo(null);
+        this.setVisible(true);
+
     }
 
     public void actionPerformed(ActionEvent a) {
