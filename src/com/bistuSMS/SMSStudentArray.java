@@ -34,6 +34,10 @@ public class SMSStudentArray {
         return studentList;
     }
 
+    public SMSStudent getSingleStudent(int position) {
+        return studentList.get(position);
+    }
+
     public void addStudent(SMSStudent stu) {
         studentList.add(stu);
     }
