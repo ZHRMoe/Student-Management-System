@@ -30,6 +30,7 @@ public class SMSAddStudent extends JFrame implements ActionListener {
     public JPanel panel5 = new JPanel();
     public JPanel panel6 = new JPanel();
     public SMSStudent addStudent;
+    public boolean addSucceed = false;
 
     public SMSAddStudent() {
         this.setLayout(new GridLayout(6, 1));
@@ -78,6 +79,7 @@ public class SMSAddStudent extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent a) {
         if (a.getSource() == addBtn) {
             addStudent = new SMSStudent(stuNameTextField.getText(), stuSexTextField.getText(), stuClassTextField.getText(), stuNumberTextField.getText());
+            addSucceed = true;
             this.setVisible(false);
         } else if (a.getSource() == backBtn) {
             this.setVisible(false);
