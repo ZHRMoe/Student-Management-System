@@ -71,18 +71,18 @@ public class SMSForgetPsw extends JFrame implements ActionListener{
 
     public void actionPerformed(ActionEvent a) {
         if (a.getSource() == changePswBtn) {
-            SMSUserList userList = new SMSUserList();
             String userName = nameTextField.getText();
             char[] passWord = pswField.getPassword();
             char[] confirmPsw = confirmPswField.getPassword();
             String psw = String.valueOf(passWord);
             String conPsw = String.valueOf(confirmPsw);
+            SMSUserList userList = SMSStart.getUserList();
             boolean changePswFlag = false;
             if (psw.equals(conPsw)) {
                 for (int i = 0; i < userList.getUserListCount(); ++i) {
                     if (userList.getUser(i).getUserName().equals(userName)) {
                         SMSUser newUser = new SMSUser(userName, psw);
-                        userList.forgotPsw(newUser);
+                        userList.forgotPsw(i, newUser);
                         changePswFlag = true;
                         new SMSLogin(userName);
                         this.setVisible(false);

@@ -104,17 +104,23 @@ public class SMSLogin extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent a) {
         if (a.getSource() == logInBtn) {
+            SMSUserList userList = SMSStart.getUserList();
+            for (int i = 0; i <userList.getUserListCount(); ++i) {
+                System.out.println(userList.getUser(i).getUserName() + userList.getUser(i).getUserPsw());
+            }
             String userName = nameTextField.getText();
             char[] passWord = pswField.getPassword();
             String psw = String.valueOf(passWord);
-            SMSUserList userList = new SMSUserList();
+            boolean logInFlag = false;
             for (int i = 0; i < userList.getUserListCount(); ++i) {
                 if ((userName.equals(userList.getUser(i).getUserName())) && (psw.equals(userList.getUser(i).getUserPsw()))) {
                     new SMSMainWindow();
                     this.setVisible(false);
-                } else {
-                    JOptionPane.showMessageDialog(null, "用户名密码错误！");
+                    logInFlag = true;
                 }
+            }
+            if (!logInFlag) {
+                JOptionPane.showMessageDialog(null, "用户名密码错误！");
             }
         } else if (a.getSource() == registerBtn) {
             new SMSRegister();

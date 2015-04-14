@@ -1,12 +1,12 @@
 package com.bistuSMS;
 
 import javax.swing.*;
-import javax.swing.border.Border;
 import java.awt.*;
 
 /**
  * Created by bill on 15/4/14.
  */
+
 public class SMSWelcomeWindow extends JFrame {
     public static void main(String[] args) {
         new SMSWelcomeWindow();
@@ -28,18 +28,16 @@ public class SMSWelcomeWindow extends JFrame {
         titleLabel.setFont(font);
         titlePanel = new JPanel();
         titlePanel.add(titleLabel);
-        membersLabel = new JLabel("Powered by Haoran Zhang, Bo Xu, Bo Hu");
+        membersLabel = new JLabel("Powered by Hu Bo, Xu Bo and Zhang Haoran");
         membersPanel = new JPanel();
-        loginButton = new JButton("Login");
+        loginButton = new JButton("登陆");
         bigStringSLabel = new JLabel("S");
         bigStringSLabel.setFont(big);
         bigStringSPanel = new JPanel();
         bigStringSPanel.add(bigStringSLabel, BorderLayout.CENTER);
         bigStringSPanel.add(membersPanel, BorderLayout.SOUTH);
-//        membersPanel.add(membersLabel, BorderLayout.WEST);
-//        membersPanel.add(quitButton, BorderLayout.EAST);
 
-        quitButton = new JButton("Quit");
+        quitButton = new JButton("退出");
         southPanel = new JPanel();
         southPanel.add(membersPanel, BorderLayout.SOUTH);
         southPanel.add(loginButton, BorderLayout.WEST);

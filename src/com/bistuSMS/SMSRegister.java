@@ -76,7 +76,10 @@ public class SMSRegister extends JFrame implements ActionListener{
             char[] confirmPsw = confirmPswField.getPassword();
             String psw = String.valueOf(passWord);
             String conPsw = String.valueOf(confirmPsw);
-            SMSUserList userList = new SMSUserList();
+            SMSUserList userList = SMSStart.getUserList();
+            for (int i = 0; i <userList.getUserListCount(); ++i) {
+                System.out.println(userList.getUser(i).getUserName() + " " + userList.getUser(i).getUserPsw());
+            }
             boolean registerFlag = true;
             if (psw.equals(conPsw)) {
                 for (int i = 0; i < userList.getUserListCount(); ++i) {
@@ -90,8 +93,10 @@ public class SMSRegister extends JFrame implements ActionListener{
                 if (registerFlag) {
                     SMSUser newUser = new SMSUser(userName, psw);
                     userList.register(newUser);
-                    new SMSLogin();
+                    new SMSLogin(userName);
                     this.setVisible(false);
+                    JOptionPane.showMessageDialog(null, "注册成功！");
+                    System.out.println(userList.getUserListCount());
                 }
             } else {
                 JOptionPane.showMessageDialog(null, "两次输入的密码不同！");

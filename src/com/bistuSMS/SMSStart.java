@@ -5,9 +5,14 @@ package com.bistuSMS;
  */
 public class SMSStart {
 
-    public SMSUserList userList = new SMSUserList();
+    public static SMSUserList userList = new SMSUserList();
+
+    public static SMSUserList getUserList() {
+        return userList;
+    }
 
     public static void main(String[] args) {
         new SMSLogin();
     }
+
 }

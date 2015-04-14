@@ -30,8 +30,16 @@ public class SMSLoginStatus {
         return loginSucceed;
     }
 
+    public void setLoginSucceed(boolean b) {
+        this.loginSucceed = b;
+    }
+
     public boolean isLogedIn() {
         return logedIn;
+    }
+
+    public void setLogedIn(boolean b) {
+        this.logedIn = b;
     }
 
 }

@@ -19,31 +19,20 @@ import java.util.ArrayList;
 public class SMSUserList {
 
     public ArrayList<SMSUser> userList = new ArrayList<SMSUser>();
+    public int count = 1;
 
     public SMSUserList() {
         SMSUser testUser = new SMSUser();
         userList.add(testUser);
     }
 
-    public boolean register(SMSUser user) {
-        for (int i = 0; i < userList.size(); ++i) {
-            if (user.getUserName().equals(userList.get(i).getUserName())) {
-                userList.add(user);
-                return true;
-            }
-        }
-        return false;
+    public void register(SMSUser user) {
+        userList.add(user);
     }
 
-    public boolean forgotPsw(SMSUser user) {
-        for (int i = 0; i < userList.size(); ++i) {
-            if (user.getUserName().equals(userList.get(i).getUserName())) {
-                userList.remove(i);
-                userList.add(i, user);
-                return true;
-            }
-        }
-        return false;
+    public void forgotPsw(int position, SMSUser user) {
+        userList.remove(position);
+        userList.add(user);
     }
 
     public SMSUser getUser(int position) {
