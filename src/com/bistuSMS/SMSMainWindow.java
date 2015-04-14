@@ -11,14 +11,15 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
 /**
- * Created by hasee on 2015/4/13.
+ * Created by Xu Bo on 2015/4/13.
  */
+
 public class SMSMainWindow extends JFrame {
-    JButton returnButton = new JButton("return");
-    JButton removeButton = new JButton("remove");
+    JButton returnButton = new JButton("注销");
+    JButton removeButton = new JButton("删除");
     Font font = new Font("Default",Font.PLAIN,20);
     Font titleFont = new Font("Default",Font.PLAIN,25);
-    TitledBorder border1 = new TitledBorder("classMember");
+    TitledBorder border1 = new TitledBorder("学生列表");
     JTable studentListTable = new JTable();
 
     JLabel titleLabel;
@@ -28,14 +29,12 @@ public class SMSMainWindow extends JFrame {
     JPanel panel3 = new JPanel();
 
     public SMSMainWindow (String user){
-
-
+        this.setTitle("学生管理系统");
         SMSStudentArray studentArray = new SMSStudentArray();
         setLayout(null);
         this.setSize(800, 600);
-        this.setVisible(true);
         this.setLocationRelativeTo(null);
-        titleLabel = new JLabel(user);
+        titleLabel = new JLabel(user + "，欢迎使用！");
         titleLabel.setFont(titleFont);
         panel1.add(titleLabel);
         panel1.setBounds(0, 20, 800, 40);
@@ -54,7 +53,7 @@ public class SMSMainWindow extends JFrame {
 
             @Override
             public String getColumnName(int columnIndex) {
-                return new String[]{"name", "number", "sex", "class"}[columnIndex];
+                return new String[]{"姓名", "学号", "性别", "班级"}[columnIndex];
             }
 
             @Override
@@ -108,7 +107,7 @@ public class SMSMainWindow extends JFrame {
         panel2.setBorder(border1);
         panel2.setBounds(10, 80, 760, 400);
         panel2.add(studentListTable);
-//
+
         add(panel2);
         panel2.setViewportView(studentListTable);
         panel3.setBounds(10, 500, 760, 100);
@@ -120,7 +119,7 @@ public class SMSMainWindow extends JFrame {
                 int[] rows = studentListTable.getSelectedRows();
                 studentListTable.clearSelection();
                 if (rows.length != 0) {
-                    studentArray.deleteStudentArray(rows);
+                    studentArray.deleteStudent(rows[0]);
                     studentListTable.revalidate();
                 }
             }
@@ -133,5 +132,7 @@ public class SMSMainWindow extends JFrame {
             }
         });
         add(panel3);
+
+        this.setVisible(true);
     }
 }

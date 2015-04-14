@@ -115,7 +115,7 @@ public class SMSLogin extends JFrame implements ActionListener {
             boolean logInFlag = false;
             for (int i = 0; i < userList.getUserListCount(); ++i) {
                 if ((userName.equals(userList.getUser(i).getUserName())) && (psw.equals(userList.getUser(i).getUserPsw()))) {
-                    new SMSMainWindow("user"+ i);
+                    new SMSMainWindow(userName);
                     this.setVisible(false);
                     logInFlag = true;
                 }

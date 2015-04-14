@@ -28,8 +28,8 @@ public class SMSWelcomeWindow extends JFrame implements ActionListener {
         SMSWelcome.setFont(SMSFontDefault);
         SMSSMSLabel = new JLabel("学生管理系统");
         SMSSMSLabel.setFont(SMSFontMonaco);
-        SMSWelcomeLogin = new JButton("开始");
-        SMSWelcomeQuit = new JButton("退出");
+        SMSWelcomeLogin = new JButton("进入系统");
+        SMSWelcomeQuit = new JButton("退出系统");
         SMSWelcomeMembers = new JLabel("Powered by Hu Bo, Xu Bo and Zhang Haoran");
         SMSWelcomeMembers.setFont(new Font("Default",Font.PLAIN,13));
 
@@ -47,7 +47,7 @@ public class SMSWelcomeWindow extends JFrame implements ActionListener {
         }
         this.setSize(300, 200);
         this.setLocationRelativeTo(null);
-        this.setTitle("学生信息管理系统");
+        this.setTitle("学生管理系统-欢迎");
         SMSWelcomeLogin.addActionListener(this);
         SMSWelcomeLogin.getRootPane().setDefaultButton(SMSWelcomeLogin);
         SMSWelcomeQuit.addActionListener(this);
