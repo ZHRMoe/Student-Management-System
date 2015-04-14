@@ -34,6 +34,12 @@ public class SMSStudentArray {
         studentList.add(locationBeforeEdit, stuAfterEdit);
     }
 
+    public void deleteStudentArray(int[] array) {
+        for(int i = 0; i < array.length; ++i) {
+            studentList.remove(i);
+        }
+    }
+
     public void deleteStudent(int locationBeforeDelete) {
         studentList.remove(locationBeforeDelete);
     }

@@ -46,12 +46,24 @@
       <file leaf-file-name="SMSStudentArray.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSStudentArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.59398496">
-              <caret line="33" column="58" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.49624062">
+              <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
               <folding>
                 <element signature="e#503#504#0" expanded="true" />
                 <element signature="e#537#538#0" expanded="true" />
+                <element signature="e#687#688#0" expanded="true" />
+                <element signature="e#723#724#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.740741">
+              <caret line="633" column="46" selection-start-line="633" selection-start-column="46" selection-end-line="633" selection-end-column="46" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -453,6 +465,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
     <list size="1">
@@ -474,12 +492,12 @@
       <created>1429020901609</created>
       <option name="number" value="Default" />
       <updated>1429020901609</updated>
-      <workItem from="1429020901627" duration="640000" />
+      <workItem from="1429020901627" duration="1449000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="640000" />
+    <option name="totallyTimeSpent" value="1449000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="-597" width="1920" height="1080" extended-state="0" />
@@ -574,13 +592,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.740741">
+          <caret line="633" column="46" selection-start-line="633" selection-start-column="46" selection-end-line="633" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bistuSMS/SMSStudentArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59398496">
-          <caret line="33" column="58" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.49624062">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
           <folding>
             <element signature="e#503#504#0" expanded="true" />
             <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
           </folding>
         </state>
       </provider>
