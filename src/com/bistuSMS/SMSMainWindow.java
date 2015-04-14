@@ -36,7 +36,7 @@ public class SMSMainWindow extends JFrame {
         this.setVisible(true);
         this.setLocationRelativeTo(null);
         titleLabel = new JLabel(user);
-        titleLabel.setFont(font);
+        titleLabel.setFont(titleFont);
         panel1.add(titleLabel);
         panel1.setBounds(0, 20, 800, 40);
         add(panel1);
@@ -120,9 +120,16 @@ public class SMSMainWindow extends JFrame {
                 int[] rows = studentListTable.getSelectedRows();
                 studentListTable.clearSelection();
                 if (rows.length != 0) {
-                    studentArray.deleteStudent(rows[0]);
+                    studentArray.deleteStudentArray(rows);
                     studentListTable.revalidate();
                 }
+            }
+        });
+        returnButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new SMSLogin();
+                setVisible(false);
             }
         });
         add(panel3);
