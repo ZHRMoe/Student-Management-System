@@ -38,6 +38,12 @@ public class SMSStudentArray {
         studentList.remove(locationBeforeDelete);
     }
 
+    public void deleteSomeStudent(int startPosition, int endPosition) {
+        for (int i = startPosition; i < endPosition; ++i) {
+            studentList.remove(i);
+        }
+    }
+
     public String checkStudent(SMSStudent stu) {
         return "Name: " + stu.getStuName() + "\nSex: " + stu.getStuSex() + "\nClass: " + stu.getStuClass() + "\nNumber: " + stu.getStuNumber();
     }
