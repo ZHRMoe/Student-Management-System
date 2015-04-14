@@ -8,7 +8,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 /**
- * Created by hasee on 2015/4/12.
+ * Created by ZHRMoe on 2015/4/12.
  */
 
 public class SMSLogin extends JFrame implements ActionListener {
@@ -52,7 +52,6 @@ public class SMSLogin extends JFrame implements ActionListener {
 
         this.setSize(300, 200);
 
-//        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setVisible(true);
         this.setTitle("学生管理系统-登陆");
 
@@ -91,7 +90,6 @@ public class SMSLogin extends JFrame implements ActionListener {
 
         this.setSize(300, 200);
 
-//        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setVisible(true);
         this.setTitle("学生管理系统-登陆");
 
@@ -105,9 +103,6 @@ public class SMSLogin extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent a) {
         if (a.getSource() == logInBtn) {
             SMSUserList userList = SMSStart.getUserList();
-            for (int i = 0; i <userList.getUserListCount(); ++i) {
-                System.out.println(userList.getUser(i).getUserName() + userList.getUser(i).getUserPsw());
-            }
             String userName = nameTextField.getText();
             char[] passWord = pswField.getPassword();
             String psw = String.valueOf(passWord);
@@ -129,10 +124,6 @@ public class SMSLogin extends JFrame implements ActionListener {
             new SMSForgetPsw();
             this.setVisible(false);
         }
-    }
-
-    public static void main(String[] args) {
-        new SMSLogin();
     }
 
 }

@@ -98,7 +98,6 @@ public class SMSForgetPsw extends JFrame implements ActionListener{
             new SMSLogin();
             this.setVisible(false);
         }
-
     }
 
 }

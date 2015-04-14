@@ -77,9 +77,6 @@ public class SMSRegister extends JFrame implements ActionListener{
             String psw = String.valueOf(passWord);
             String conPsw = String.valueOf(confirmPsw);
             SMSUserList userList = SMSStart.getUserList();
-            for (int i = 0; i <userList.getUserListCount(); ++i) {
-                System.out.println(userList.getUser(i).getUserName() + " " + userList.getUser(i).getUserPsw());
-            }
             boolean registerFlag = true;
             if (psw.equals(conPsw)) {
                 for (int i = 0; i < userList.getUserListCount(); ++i) {

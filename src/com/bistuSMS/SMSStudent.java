@@ -4,13 +4,6 @@ package com.bistuSMS;
  * Created by ZHRMoe on 15/4/11.
  */
 
-/**
- *  SMSStudent is a class to describe a student him/herself.
- *  There are 4 properties in SMSStudent: 'stuName', 'stuSex', 'stuClass', 'stuNumber'.
- *  This class provides 2 kinds of construction methods: a non-parametric method and a method with 4 Strings as its parametric to initialize properties.
- *  This class provides get/set methods for 4 properties above.
- *  ZHRMoe Studio, 2015.
- */
 
 public class SMSStudent {
 
