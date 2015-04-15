@@ -19,7 +19,7 @@ public class SMSMainWindow extends JFrame{
 
     JButton returnButton = new JButton("注销");
     JButton removeButton = new JButton("删除");
-    JButton addbutton = new JButton("add");
+    JButton addButton = new JButton("添加");
 
     Font font = new Font("Default",Font.PLAIN,20);
     Font titleFont = new Font("Default",Font.PLAIN,25);
@@ -32,9 +32,10 @@ public class SMSMainWindow extends JFrame{
     JScrollPane panel2 = new JScrollPane();
     JPanel panel3 = new JPanel();
 
+    public static SMSStudentArray studentArray = new SMSStudentArray();
+
     public SMSMainWindow (String user){
         this.setTitle("学生管理系统");
-        SMSStudentArray studentArray = new SMSStudentArray();
         setLayout(null);
         this.setSize(800, 600);
         this.setLocationRelativeTo(null);
@@ -117,6 +118,7 @@ public class SMSMainWindow extends JFrame{
         panel3.setBounds(10, 500, 760, 100);
         panel3.add(returnButton);
         panel3.add(removeButton);
+        panel3.add(addButton);
         removeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -135,14 +137,19 @@ public class SMSMainWindow extends JFrame{
                 setVisible(false);
             }
         });
-        addbutton.addActionListener(new ActionListener() {
+        addButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-//                new SMSAddStudent();
+                new SMSAddStudent(studentArray);
+                studentListTable.revalidate();
             }
         });
         add(panel3);
 
         this.setVisible(true);
+    }
+
+    public static SMSStudentArray getStuArray() {
+        return studentArray;
     }
 }

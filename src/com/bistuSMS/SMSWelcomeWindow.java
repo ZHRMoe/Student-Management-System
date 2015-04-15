@@ -30,7 +30,7 @@ public class SMSWelcomeWindow extends JFrame implements ActionListener {
         SMSSMSLabel.setFont(SMSFontMonaco);
         SMSWelcomeLogin = new JButton("进入系统");
         SMSWelcomeQuit = new JButton("退出系统");
-        SMSWelcomeMembers = new JLabel("Powered by Hu Bo, Xu Bo and Zhang Haoran");
+        SMSWelcomeMembers = new JLabel("Powered by Xu Bo, Zhang Haoran, Zhang Zhu");
         SMSWelcomeMembers.setFont(new Font("Default",Font.PLAIN,13));
 
         SMSWelcomePanel = new JPanel[4];
