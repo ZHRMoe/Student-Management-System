@@ -18,6 +18,8 @@ Currently, there are 3 members in the group.
 
 - [Zhang Haoran](https://github.com/zhr19960917)
 
+- [Zhang Zhu](https://github.com/zhangzhu195211)
+
 ##### Who are we?
 
 Our group is working on iOS developing using Objective-C and Swift, and now learning OOP in Java.
