@@ -1,7 +1,6 @@
 package com.bistuSMS;
 
 import javax.swing.*;
-import javax.swing.text.Position;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -19,7 +18,8 @@ public class SMSAddStudent extends JFrame implements ActionListener {
     public JTextField stuNumberTextField = new JTextField(13);
     public JLabel titleLabel = new JLabel("添加新学生");
     public JLabel nameLabel = new JLabel("姓名：");
-    public JLabel sexLabel = new JLabel("性别：");
+    public JLabel sexLabel = new JLabel("性别：         ");
+    public JLabel blankLabel = new JLabel("         ");
     public JLabel classLabel = new JLabel("班级：");
     public JLabel numberLabel = new JLabel("学号：");
     public JButton addBtn = new JButton("添加");
@@ -30,22 +30,47 @@ public class SMSAddStudent extends JFrame implements ActionListener {
     public JPanel panel4 = new JPanel();
     public JPanel panel5 = new JPanel();
     public JPanel panel6 = new JPanel();
+    public String sex = new String("男");
+    public ButtonGroup sexButtonGroup = new ButtonGroup();
+    public JRadioButton maleRadioButton = new JRadioButton("男", true);
+    public JRadioButton femaleRadioButton = new JRadioButton("女");
     public SMSStudent addStudent;
     public SMSStudentArray stuArray = SMSMainWindow.getStuArray();
     public boolean addSucceed = false;
     public boolean windowClosed = false;
     public int position;
 
-    public SMSAddStudent(int positon, SMSStudentArray stuArray) {
+    public SMSAddStudent(int position, SMSStudentArray stuArray) {
         this.setLayout(new GridLayout(6, 1));
-        this.position = positon;
+        this.position = position;
         panel1.add(titleLabel);
 
         panel2.add(nameLabel);
         panel2.add(stuNameTextField);
 
+        backBtn.addActionListener(this);
+        addBtn.addActionListener(this);
+        maleRadioButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                sex = "男";
+            }
+        });
+        femaleRadioButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                sex = "女";
+            }
+        });
+
+        sexButtonGroup.add(maleRadioButton);
+        sexButtonGroup.add(femaleRadioButton);
+
         panel3.add(sexLabel);
-        panel3.add(stuSexTextField);
+        panel3.add(maleRadioButton);
+        panel3.add(blankLabel);
+        panel3.add(femaleRadioButton);
+        panel3.add(blankLabel);
 
         panel4.add(classLabel);
         panel4.add(stuClassTextField);
@@ -63,10 +88,7 @@ public class SMSAddStudent extends JFrame implements ActionListener {
         this.add(panel5);
         this.add(panel6);
 
-        backBtn.addActionListener(this);
-        addBtn.addActionListener(this);
-
-        this.setSize(300, 200);
+        this.setSize(300, 250);
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setTitle("学生管理系统-添加新学生");
 
@@ -82,7 +104,7 @@ public class SMSAddStudent extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent a) {
         if (a.getSource() == addBtn) {
-            addStudent = new SMSStudent(stuNameTextField.getText(), stuSexTextField.getText(), stuClassTextField.getText(), stuNumberTextField.getText());
+            addStudent = new SMSStudent(stuNameTextField.getText(), sex, stuClassTextField.getText(), stuNumberTextField.getText());
             stuArray.addStudent(position, addStudent);
             addSucceed = true;
             windowClosed = true;
