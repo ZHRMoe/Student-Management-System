@@ -15,9 +15,10 @@ import java.awt.event.ActionListener;
 public class SMSMainWindow extends JFrame{
 
 
-    JButton returnButton = new JButton("注销");
-    JButton removeButton = new JButton("删除");
-    JButton addButton = new JButton("添加");
+    JButton returnButton = new JButton("注销账号");
+    JButton removeButton = new JButton("删除学生");
+    JButton addButton = new JButton("添加学生");
+    JButton clearTableButton = new JButton("清除选中");
 
     Font font = new Font("Default",Font.PLAIN,20);
     Font titleFont = new Font("Default",Font.PLAIN,25);
@@ -52,12 +53,12 @@ public class SMSMainWindow extends JFrame{
 
             @Override
             public int getColumnCount() {
-                return 4;
+                return 6;
             }
 
             @Override
             public String getColumnName(int columnIndex) {
-                return new String[]{"姓名", "学号", "性别", "班级"}[columnIndex];
+                return new String[]{"姓名", "学号", "性别", "班级", "宿舍", "是否入党"}[columnIndex];
             }
 
             @Override
@@ -73,7 +74,7 @@ public class SMSMainWindow extends JFrame{
             @Override
             public Object getValueAt(int rowIndex, int columnIndex) {
                 SMSStudent s = studentArray.getSingleStudent(rowIndex);
-                return new Object[]{s.getStuName(), s.getStuNumber(), s.getStuSex(), s.getStuClass()}[columnIndex];
+                return new Object[]{s.getStuName(), s.getStuNumber(), s.getStuSex(), s.getStuClass(), s.getStuDorm(), s.getjoinString()}[columnIndex];
             }
 
             @Override
@@ -92,6 +93,11 @@ public class SMSMainWindow extends JFrame{
                     case 3:
                         s.setStuClass((String) aValue);
                         break;
+                    case 4:
+                        s.setStuDorm((String) aValue);
+                        break;
+                    case 5:
+                        s.setJoinCCP((boolean) aValue);
                     default:
                         break;
                 }
@@ -116,8 +122,9 @@ public class SMSMainWindow extends JFrame{
         panel2.setViewportView(studentListTable);
         panel3.setBounds(10, 500, 760, 100);
         panel3.add(returnButton);
-        panel3.add(removeButton);
+        panel3.add(clearTableButton);
         panel3.add(addButton);
+        panel3.add(removeButton);
         removeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -151,6 +158,12 @@ public class SMSMainWindow extends JFrame{
                     studentListTable.revalidate();
 
                 }
+            }
+        });
+        clearTableButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                studentListTable.clearSelection();
             }
         });
         add(panel3);

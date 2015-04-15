@@ -87,6 +87,8 @@ public class SMSLogin extends JFrame implements ActionListener {
         this.add(panel3);
         this.add(panel4);
 
+        logInBtn.getRootPane().setDefaultButton(logInBtn);
+
         logInBtn.addActionListener(this);
         registerBtn.addActionListener(this);
         forgotPswBtn.addActionListener(this);

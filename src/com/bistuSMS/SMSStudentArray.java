@@ -11,12 +11,12 @@ public class SMSStudentArray {
     private ArrayList<SMSStudent> studentList = new ArrayList<SMSStudent>();
 
     public SMSStudentArray() {
-        for (int i = 0; i <= 5; ++i) {
-            SMSStudent newStudent = new SMSStudent(String.format("Student%6d", i), "男", "计类1403", String.format("2014011%3d", i));
+        for (int i = 0; i <= 4; ++i) {
+            SMSStudent newStudent = new SMSStudent(String.format("Student%d", i), "男", "计类1403", String.format("201401100%d", i), String.format("1-10%d", i), true);
             studentList.add(newStudent);
         }
-        for (int i = 6; i <= 10; ++i) {
-            SMSStudent newStudent = new SMSStudent(String.format("Student%6d", i), "女", "计类1403", String.format("2014011%3d", i));
+        for (int i = 5; i < 10; ++i) {
+            SMSStudent newStudent = new SMSStudent(String.format("Student%d", i), "女", "计类1403", String.format("201401100%d", i), String.format("3-10%d", i), false);
             studentList.add(newStudent);
         }
     }
@@ -52,10 +52,6 @@ public class SMSStudentArray {
         for (int i = startPosition; i < endPosition; ++i) {
             studentList.remove(i);
         }
-    }
-
-    public String checkStudent(SMSStudent stu) {
-        return "Name: " + stu.getStuName() + "\nSex: " + stu.getStuSex() + "\nClass: " + stu.getStuClass() + "\nNumber: " + stu.getStuNumber();
     }
 
     public int studentListCount() {
