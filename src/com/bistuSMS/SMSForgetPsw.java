@@ -91,9 +91,13 @@ public class SMSForgetPsw extends JFrame implements ActionListener{
                         this.setVisible(false);
                     }
                 }
-                if (!changePswFlag) {
-                    JOptionPane.showMessageDialog(null, "用户名不存在");
+                if (userName.equals("") || psw.equals("")) {
+                    JOptionPane.showMessageDialog(null, "用户名密码不能为空！");
+                } else if (!changePswFlag) {
+                    JOptionPane.showMessageDialog(null, "用户名不存在！");
                 }
+            } else if (userName.equals("")){
+                JOptionPane.showMessageDialog(null, "用户名密码不能为空！");
             } else {
                 JOptionPane.showMessageDialog(null, "两次输入的密码不同！");
             }

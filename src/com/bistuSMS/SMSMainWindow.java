@@ -25,7 +25,7 @@ public class SMSMainWindow extends JFrame{
     Font titleFont = new Font("Default",Font.PLAIN,25);
 
     TitledBorder border1 = new TitledBorder("学生列表");
-    JTable studentListTable = new JTable();
+    static JTable studentListTable = new JTable();
     JLabel titleLabel;
 
     JPanel panel1 = new JPanel();
@@ -39,6 +39,7 @@ public class SMSMainWindow extends JFrame{
         setLayout(null);
         this.setSize(800, 600);
         this.setLocationRelativeTo(null);
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         titleLabel = new JLabel(user + "，欢迎使用！");
         titleLabel.setFont(titleFont);
         panel1.add(titleLabel);
@@ -140,8 +141,18 @@ public class SMSMainWindow extends JFrame{
         addButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new SMSAddStudent(studentArray);
-                studentListTable.revalidate();
+                if (studentListTable.getSelectedRowCount() == 0) {
+                    int row = 0;
+                    studentListTable.clearSelection();
+                    new SMSAddStudent(row, studentArray);
+                    studentListTable.revalidate();
+                } else {
+                    int[] rows = studentListTable.getSelectedRows();
+                    studentListTable.clearSelection();
+                    new SMSAddStudent(rows[0] + 1, studentArray);
+                    studentListTable.revalidate();
+
+                }
             }
         });
         add(panel3);

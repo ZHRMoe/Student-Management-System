@@ -87,7 +87,9 @@ public class SMSRegister extends JFrame implements ActionListener{
                         JOptionPane.showMessageDialog(null, "用户名已存在！");
                     }
                 }
-                if (registerFlag) {
+                if (userName.equals("") || psw.equals("")) {
+                    JOptionPane.showMessageDialog(null, "用户名密码不能为空！");
+                } else if (registerFlag) {
                     SMSUser newUser = new SMSUser(userName, psw);
                     userList.register(newUser);
                     new SMSLogin(userName);
@@ -95,6 +97,8 @@ public class SMSRegister extends JFrame implements ActionListener{
                     JOptionPane.showMessageDialog(null, "注册成功！");
                     System.out.println(userList.getUserListCount());
                 }
+            } else if(userList.equals("")){
+                JOptionPane.showMessageDialog(null, "用户名密码不能为空！");
             } else {
                 JOptionPane.showMessageDialog(null, "两次输入的密码不同！");
             }

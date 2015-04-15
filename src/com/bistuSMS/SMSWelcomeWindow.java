@@ -51,7 +51,9 @@ public class SMSWelcomeWindow extends JFrame implements ActionListener {
         SMSWelcomeLogin.addActionListener(this);
         SMSWelcomeLogin.getRootPane().setDefaultButton(SMSWelcomeLogin);
         SMSWelcomeQuit.addActionListener(this);
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setVisible(true);
+
     }
 
     public void actionPerformed(ActionEvent buttonAction) {

@@ -1,6 +1,7 @@
 package com.bistuSMS;
 
 import javax.swing.*;
+import javax.swing.text.Position;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -33,10 +34,11 @@ public class SMSAddStudent extends JFrame implements ActionListener {
     public SMSStudentArray stuArray = SMSMainWindow.getStuArray();
     public boolean addSucceed = false;
     public boolean windowClosed = false;
+    public int position;
 
-    public SMSAddStudent(SMSStudentArray stuArray) {
+    public SMSAddStudent(int positon, SMSStudentArray stuArray) {
         this.setLayout(new GridLayout(6, 1));
-
+        this.position = positon;
         panel1.add(titleLabel);
 
         panel2.add(nameLabel);
@@ -81,10 +83,11 @@ public class SMSAddStudent extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent a) {
         if (a.getSource() == addBtn) {
             addStudent = new SMSStudent(stuNameTextField.getText(), stuSexTextField.getText(), stuClassTextField.getText(), stuNumberTextField.getText());
-            stuArray.addStudent(addStudent);
+            stuArray.addStudent(position, addStudent);
             addSucceed = true;
             windowClosed = true;
             this.setVisible(false);
+            SMSMainWindow.studentListTable.updateUI();
         } else if (a.getSource() == backBtn) {
             this.setVisible(false);
         }

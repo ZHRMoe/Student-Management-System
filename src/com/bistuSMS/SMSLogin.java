@@ -120,7 +120,9 @@ public class SMSLogin extends JFrame implements ActionListener {
                     logInFlag = true;
                 }
             }
-            if (!logInFlag) {
+            if (userName.equals("") || psw.equals("")) {
+                JOptionPane.showMessageDialog(null, "用户名密码不能为空！");
+            } else if (!logInFlag) {
                 JOptionPane.showMessageDialog(null, "用户名密码错误！");
             }
         } else if (a.getSource() == registerBtn) {
