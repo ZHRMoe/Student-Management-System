@@ -34,7 +34,9 @@ public class SMSWelcomeWindow extends JFrame implements ActionListener {
         SMSWelcomeMembers.setFont(new Font("Default",Font.PLAIN,13));
 
         SMSWelcomePanel = new JPanel[4];
-        for(int i=0;i<4;++i) { SMSWelcomePanel[i] = new JPanel();}
+        for (int i = 0; i < 4; ++i) {
+            SMSWelcomePanel[i] = new JPanel();
+        }
         SMSWelcomePanel[0].add(SMSWelcome);
         SMSWelcomePanel[1].add(SMSSMSLabel);
         SMSWelcomePanel[2].add(SMSWelcomeLogin);
@@ -42,7 +44,7 @@ public class SMSWelcomeWindow extends JFrame implements ActionListener {
         SMSWelcomePanel[3].add(SMSWelcomeMembers);
 
         this.setLayout(new GridLayout(4, 1));
-        for(int i=0;i<4;++i) {
+        for (int i = 0; i < 4; ++i) {
             this.add(SMSWelcomePanel[i]);
         }
         this.setSize(300, 200);

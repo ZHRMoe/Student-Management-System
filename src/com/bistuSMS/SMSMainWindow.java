@@ -139,7 +139,7 @@ public class SMSMainWindow extends JFrame{
         returnButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new SMSLogin();
+                new SMSLogin(user);
                 setVisible(false);
             }
         });
