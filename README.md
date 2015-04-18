@@ -10,7 +10,7 @@ We are making this programme as an easy-use management system.
 
 ##### Who is working on this?
 
-Currently, there are 3 members in the group.
+Currently, there are 4 members in the group.
 
 - [Hu Bo](https://github.com/billhu1996)
 
@@ -30,4 +30,4 @@ Although this is a public programme, in principle, we have no mean to make it Op
 
 * * *
 
-Hu Bo - Xu Bo - Zhang Haoran([ZHRMoe Studio](http://zhrmoe.iflab.org/)), Beijing Information Science & Technology University, 2015.
+Hu Bo - Xu Bo - Zhang Haoran([ZHRMoe Studio](http://zhrmoe.iflab.org/)) - Zhang Zhu, Beijing Information Science & Technology University, 2015.
