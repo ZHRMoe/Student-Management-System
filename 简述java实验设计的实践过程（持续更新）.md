@@ -128,7 +128,87 @@ public void actionPerformed(ActionEvent a) {
 
 主要的数据都填在了一张`JTable`的对象（也就是一张表）里，这张表由于需要滚动，所以要加入`JScrollPane`，即滚动的模块当中。
 
-（表格的数据获取，可以参看`JTable`的文档解决，我可能会在这篇文档后续的更新里，描述具体的过程。）
+`JTable`数据的获取，需要通过`setModel`方法设置。
+
+```
+studentListTable.setModel(new TableModel() {
+            @Override
+            public int getRowCount() {
+                return ...;
+                //这里需要返回列表的行数
+            }
+
+            @Override
+            public int getColumnCount() {
+                return ...;
+                //这里需要返回列表的列数
+            }
+
+            @Override
+            public String getColumnName(int columnIndex) {
+                return new String[]{"", "", ...}[columnIndex];
+                //这里需要返回列标题的序列
+            }
+
+            @Override
+            public Class<?> getColumnClass(int columnIndex) {
+                return String.class;
+                //这里需要返回类型
+            }
+
+            @Override
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return true;
+                //这里返回的是列表的内容是否可以修改，这里设置为是，就可以完成学生信息的修改了
+            }
+
+            @Override
+            public Object getValueAt(int rowIndex, int columnIndex) {
+                ZHRMoeStudent s = studentArray.getSingleStudent(rowIndex);
+                return new Object[]{s.getStuName(), s.getStuNumber(), s.getStuSex(), s.getStuClass(), s.getStuDorm(), s.getjoinString()}[columnIndex];
+                //这里返回学生信息，填满列表
+            }
+
+            @Override
+            public void setValueAt(Object aValue, int rowIndex, int columnIndex) {
+                ZHRMoeStudent s = studentArray.getSingleStudent(rowIndex);
+                switch (columnIndex) {
+                    case 0:
+                        s.setStuName((String) aValue);
+                        break;
+                    case 1:
+                        s.setStuNumber((String) aValue);
+                        break;
+                    case 2:
+                        s.setStuSex((String) aValue);
+                        break;
+                    case 3:
+                        s.setStuClass((String) aValue);
+                        break;
+                    case 4:
+                        s.setStuDorm((String) aValue);
+                        break;
+                    case 5:
+                        s.setJoinCCP((boolean) aValue);
+                    default:
+                        break;
+                }
+                //填满列表
+            }
+
+            @Override
+            public void addTableModelListener(TableModelListener l) {
+            	//重写方法
+            }
+
+            @Override
+            public void removeTableModelListener(TableModelListener l) {
+				//重写方法
+            }
+        });
+```
+
+通过这些代码，列表就能够得到数据了。
 
 ###### 2.添加学生界面
 
@@ -148,6 +228,8 @@ public void actionPerformed(ActionEvent a) {
 
 在项目过程当中遇到问题，可以找我，也可以找其他在`Java`方面更有研究的同学解决，希望大家可以深刻地理解设计的步骤，对未来设计更大的项目有所帮助。
 
-2015.4.17 夜 C2613次列车上 一稿
+2015.4.17 C2613次列车上 一稿
+
+2015.4.19 C2076次列车上 二稿 
 
 ZHRMoe Studio, 2015.
