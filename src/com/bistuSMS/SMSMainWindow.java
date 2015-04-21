@@ -74,7 +74,7 @@ public class SMSMainWindow extends JFrame{
             @Override
             public Object getValueAt(int rowIndex, int columnIndex) {
                 SMSStudent s = studentArray.getSingleStudent(rowIndex);
-                return new Object[]{s.getStuName(), s.getStuNumber(), s.getStuSex(), s.getStuClass(), s.getStuDorm(), s.getjoinString()}[columnIndex];
+                return new Object[]{s.getStuName(), s.getStuNumber(), s.getStuSex(), s.getStuClass(), s.getStuDorm(), s.getJoinCCP()}[columnIndex];
             }
 
             @Override
@@ -97,7 +97,7 @@ public class SMSMainWindow extends JFrame{
                         s.setStuDorm((String) aValue);
                         break;
                     case 5:
-                        s.setJoinCCP((boolean) aValue);
+                        s.setJoinCCP((String) aValue);
                     default:
                         break;
                 }

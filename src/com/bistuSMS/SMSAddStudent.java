@@ -34,7 +34,7 @@ public class SMSAddStudent extends JFrame implements ActionListener {
     public JPanel panel7 = new JPanel();
     public JPanel panel8 = new JPanel();
     public String sex = new String("男");
-    public boolean join = new Boolean(true);
+    public String join = new String("是");
     public ButtonGroup sexButtonGroup = new ButtonGroup();
     public ButtonGroup joinCCPButtonGroup = new ButtonGroup();
     public JRadioButton maleRadioButton = new JRadioButton("男", true);
@@ -87,13 +87,13 @@ public class SMSAddStudent extends JFrame implements ActionListener {
         joinedRadioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                join = true;
+                join = "是";
             }
         });
         noJoinRadioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                join = false;
+                join = "否";
             }
         });
 

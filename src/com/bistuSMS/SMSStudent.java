@@ -12,13 +12,13 @@ public class SMSStudent {
     private String stuClass;
     private String stuNumber;
     private String stuDorm;
-    private boolean joinCCP;
+    private String joinCCP;
 
     public SMSStudent() {
 
     }
 
-    public SMSStudent(String stuName, String stuSex, String stuClass, String stuNumber, String stuDorm, boolean joinCCP) {
+    public SMSStudent(String stuName, String stuSex, String stuClass, String stuNumber, String stuDorm, String joinCCP) {
         this.stuName = stuName;
         this.stuSex = stuSex;
         this.stuClass = stuClass;
@@ -47,16 +47,8 @@ public class SMSStudent {
         return stuDorm;
     }
 
-    public boolean isJoinCCP() {
+    public String getJoinCCP() {
         return joinCCP;
-    }
-
-    public String getjoinString() {
-        if (isJoinCCP()) {
-            return "是";
-        } else {
-            return "否";
-        }
     }
 
     public void setStuName(String stuName) {
@@ -79,7 +71,7 @@ public class SMSStudent {
         this.stuDorm = stuDorm;
     }
 
-    public void setJoinCCP(boolean joinCCP) {
+    public void setJoinCCP(String joinCCP) {
         this.joinCCP = joinCCP;
     }
 
