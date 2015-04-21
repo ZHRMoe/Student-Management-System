@@ -165,8 +165,8 @@ studentListTable.setModel(new TableModel() {
             @Override
             public Object getValueAt(int rowIndex, int columnIndex) {
                 ZHRMoeStudent s = studentArray.getSingleStudent(rowIndex);
-                return new Object[]{s.getStuName(), s.getStuNumber(), s.getStuSex(), s.getStuClass(), s.getStuDorm(), s.getjoinString()}[columnIndex];
-                //这里返回学生信息，填满列表
+                return new Object[]{...}[columnIndex];
+                //这里返回学生信息，填满列表 需要填写get方法
             }
 
             @Override
@@ -174,26 +174,26 @@ studentListTable.setModel(new TableModel() {
                 ZHRMoeStudent s = studentArray.getSingleStudent(rowIndex);
                 switch (columnIndex) {
                     case 0:
-                        s.setStuName((String) aValue);
+                        ... //填写第0列的set方法，以下依此类推
                         break;
                     case 1:
-                        s.setStuNumber((String) aValue);
+                        ...
                         break;
                     case 2:
-                        s.setStuSex((String) aValue);
+                        ...
                         break;
                     case 3:
-                        s.setStuClass((String) aValue);
+                        ...
                         break;
                     case 4:
-                        s.setStuDorm((String) aValue);
+                        ...
                         break;
                     case 5:
-                        s.setJoinCCP((boolean) aValue);
+                        ...
                     default:
                         break;
                 }
-                //填满列表
+                //修改列表元素
             }
 
             @Override
