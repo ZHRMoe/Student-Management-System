@@ -16,7 +16,7 @@ Currently, there are 4 members in the group.
 
 - [Xu Bo](https://github.com/lyzl)
 
-- [Zhang Haoran](https://github.com/zhr19960917)
+- [Zhang Haoran](https://github.com/ZHRMoe)
 
 - [Zhang Zhu](https://github.com/zhangzhu195211)
 
