@@ -113,7 +113,7 @@ public class SMSLogin extends JFrame implements ActionListener {
             SMSUserList userList = SMSStart.getUserList();
             String userName = nameTextField.getText();
             char[] passWord = pswField.getPassword();
-            String psw = String.valueOf(passWord);
+            String psw = MD5.string2MD5(String.valueOf(passWord));
             boolean logInFlag = false;
             for (int i = 0; i < userList.getUserListCount(); ++i) {
                 if ((userName.equals(userList.getUser(i).getUserName())) && (psw.equals(userList.getUser(i).getUserPsw()))) {
