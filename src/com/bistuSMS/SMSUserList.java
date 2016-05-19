@@ -10,11 +10,10 @@ import java.util.ArrayList;
 public class SMSUserList {
 
     public ArrayList<SMSUser> userList = new ArrayList<SMSUser>();
-    public int count = 1;
 
     public SMSUserList() {
-        SMSUser testUser = new SMSUser();
-        userList.add(testUser);
+//        SMSUser testUser = new SMSUser();
+//        userList.add(testUser);
     }
 
     public void register(SMSUser user) {
