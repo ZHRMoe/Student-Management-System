@@ -30,29 +30,41 @@ public class SMSStudentArray {
     }
 
     public void addStudent(int position, SMSStudent stu) {
-        studentList.add(position, stu);
+        try {
+            SMSXML.addStudent(stu);
+            studentList = SMSXML.getStudents().getStudentList();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public void editStudent(int locationBeforeEdit, SMSStudent stuAfterEdit) {
-        studentList.remove(locationBeforeEdit);
-        studentList.add(locationBeforeEdit, stuAfterEdit);
+        try {
+            SMSXML.removeStudent(studentList.get(locationBeforeEdit));
+            SMSXML.addStudent(stuAfterEdit);
+            studentList = SMSXML.getStudents().getStudentList();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public void deleteStudentArray(int[] array) {
         for(int i = array.length - 1; i >= 0; --i) {
-            studentList.remove(i);
+            SMSXML.removeStudent(studentList.get(array[i]));
         }
+        studentList = SMSXML.getStudents().getStudentList();
     }
 
     public void deleteStudent(int locationBeforeDelete) {
-        studentList.remove(locationBeforeDelete);
+        SMSXML.removeStudent(studentList.get(locationBeforeDelete));
+        studentList = SMSXML.getStudents().getStudentList();
     }
 
-    public void deleteSomeStudent(int startPosition, int endPosition) {
-        for (int i = startPosition; i < endPosition; ++i) {
-            studentList.remove(i);
-        }
-    }
+//    public void deleteSomeStudent(int startPosition, int endPosition) {
+//        for (int i = startPosition; i < endPosition; ++i) {
+//            studentList.remove(i);
+//        }
+//    }
 
     public int studentListCount() {
         return studentList.size();

@@ -17,12 +17,22 @@ public class SMSUserList {
     }
 
     public void register(SMSUser user) {
-        userList.add(user);
+        try {
+            SMSXML.addUser(user);
+            userList = SMSXML.getUsers().userList;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public void forgotPsw(int position, SMSUser user) {
-        userList.remove(position);
-        userList.add(user);
+        try {
+            SMSXML.removeUser(userList.get(position));
+            SMSXML.addUser(user);
+            userList = SMSXML.getUsers().userList;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public SMSUser getUser(int position) {

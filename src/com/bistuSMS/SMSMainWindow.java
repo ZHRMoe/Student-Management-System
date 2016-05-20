@@ -129,11 +129,9 @@ public class SMSMainWindow extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 int[] rows = studentListTable.getSelectedRows();
+                new SMSDeleteStudent(rows);
                 studentListTable.clearSelection();
-                if (rows.length != 0) {
-                    studentArray.deleteStudent(rows[0]);
-                    studentListTable.revalidate();
-                }
+                studentListTable.revalidate();
             }
         });
         returnButton.addActionListener(new ActionListener() {

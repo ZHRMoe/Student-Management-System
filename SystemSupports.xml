@@ -1,21 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<root>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><root>
     <userInfo>
-        <user userName="abc" userPsw="5f4dcc3b5aa765d61d8327deb882cf99">
-        </user>
-
-    </userInfo>
+        <user userName="abc" userPsw="5f4dcc3b5aa765d61d8327deb882cf99"/>
+    <user userName="root" userPsw="2d8ccb9f3d83be83c0db0ff2c3ee24b7"/></userInfo>
     <studentInfo>
-
         <student stuClass="计科1405" stuNumber="2014011000" stuSex="男">
             <stuName>张三</stuName>
             <stuDom>学一115</stuDom>
             <joinCCP>否</joinCCP>
         </student>
-        <student stuClass="" stuNumber="201" stuSex="">
-            <stuName/>
-            <stuDom/>
-            <joinCCP/>
-        </student>
-    </studentInfo>
+    <student stuClass="计科1405" stuNumber="2014011001" stuSex="男"><stuName>李四</stuName><stuDom>学一115</stuDom><joinCCP>是</joinCCP></student></studentInfo>
 </root>
