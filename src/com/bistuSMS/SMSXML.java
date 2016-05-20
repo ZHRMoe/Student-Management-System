@@ -71,7 +71,8 @@ public class SMSXML {
             NodeList userInfo = doc.getElementsByTagName("user");
             for (int i = 0;i<userInfo.getLength();i++) {
                 Element userElement = (Element) userInfo.item(i);
-                if (userElement.getAttributeNode("userName").getTextContent().equals(user.getUserName()) && userElement.getAttributeNode("userPsw").getTextContent().equals(user.getUserPsw())) {
+                if (userElement.getAttributeNode("userName").getTextContent().equals(user.getUserName())
+                        && userElement.getAttributeNode("userPsw").getTextContent().equals(user.getUserPsw())) {
                     Node userInfoNode = doc.getElementsByTagName("userInfo").item(0);
                     userInfoNode.removeChild(userElement);
                     break;
@@ -182,19 +183,6 @@ public class SMSXML {
         } catch (Exception e) {
             e.printStackTrace();
             return new SMSStudentArray();
-        }
-    }
-
-    public static void main(String[] args) {
-        try {
-            getStudents();
-            getUsers();
-            removeStudent(new SMSStudent("","","","201","",""));
-            removeUser(new SMSUser("abcd", "5f4dcc3b5aa765d61d8327deb882cf99"));
-            addStudent(new SMSStudent("","","","201","",""));
-            addUser(new SMSUser("abc","password"));
-        } catch (Exception e) {
-            e.printStackTrace();
         }
     }
 }

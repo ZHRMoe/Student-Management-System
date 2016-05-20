@@ -12,8 +12,6 @@ public class SMSUserList {
     public ArrayList<SMSUser> userList = new ArrayList<SMSUser>();
 
     public SMSUserList() {
-//        SMSUser testUser = new SMSUser();
-//        userList.add(testUser);
     }
 
     public void register(SMSUser user) {
