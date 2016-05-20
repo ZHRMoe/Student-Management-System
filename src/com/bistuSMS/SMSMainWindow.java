@@ -31,7 +31,7 @@ public class SMSMainWindow extends JFrame{
     JScrollPane panel2 = new JScrollPane();
     JPanel panel3 = new JPanel();
 
-    public static SMSStudentArray studentArray = new SMSStudentArray();
+    public static SMSStudentArray studentArray = SMSXML.getStudents();
 
     public SMSMainWindow (String user){
         this.setTitle("学生管理系统");
@@ -129,11 +129,9 @@ public class SMSMainWindow extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 int[] rows = studentListTable.getSelectedRows();
+                new SMSDeleteStudent(rows);
                 studentListTable.clearSelection();
-                if (rows.length != 0) {
-                    studentArray.deleteStudent(rows[0]);
-                    studentListTable.revalidate();
-                }
+                studentListTable.revalidate();
             }
         });
         returnButton.addActionListener(new ActionListener() {

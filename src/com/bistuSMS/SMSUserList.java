@@ -10,20 +10,27 @@ import java.util.ArrayList;
 public class SMSUserList {
 
     public ArrayList<SMSUser> userList = new ArrayList<SMSUser>();
-    public int count = 1;
 
     public SMSUserList() {
-        SMSUser testUser = new SMSUser();
-        userList.add(testUser);
     }
 
     public void register(SMSUser user) {
-        userList.add(user);
+        try {
+            SMSXML.addUser(user);
+            userList = SMSXML.getUsers().userList;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public void forgotPsw(int position, SMSUser user) {
-        userList.remove(position);
-        userList.add(user);
+        try {
+            SMSXML.removeUser(userList.get(position));
+            SMSXML.addUser(user);
+            userList = SMSXML.getUsers().userList;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public SMSUser getUser(int position) {

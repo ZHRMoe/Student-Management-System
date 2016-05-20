@@ -5,7 +5,7 @@ package com.bistuSMS;
  */
 public class SMSStart {
 
-    public static SMSUserList userList = new SMSUserList();
+    public static SMSUserList userList = SMSXML.getUsers();
 
     public static SMSUserList getUserList() {
         return userList;
